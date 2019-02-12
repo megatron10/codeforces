@@ -1,0 +1,90 @@
+<div class="ttypography">
+ <div class="problem-statement">
+  <div class="header">
+   <div class="title">
+    M. Quadcopter Competition
+   </div>
+   <div class="time-limit">
+    <div class="property-title">
+     time limit per test
+    </div>3 seconds
+   </div>
+   <div class="memory-limit">
+    <div class="property-title">
+     memory limit per test
+    </div>256 megabytes
+   </div>
+   <div class="input-file">
+    <div class="property-title">
+     input
+    </div>standard input
+   </div>
+   <div class="output-file">
+    <div class="property-title">
+     output
+    </div>standard output
+   </div>
+  </div>
+  <div>
+   <p>Polycarp takes part in a quadcopter competition. According to the rules a flying robot should:</p>
+   <ul> 
+    <li> start the race from some point of a field, </li>
+    <li> go around the flag, </li>
+    <li> close cycle returning back to the starting point. </li>
+   </ul>
+   <p>Polycarp knows the coordinates of the starting point (<span class="tex-span"><i>x</i><sub class="lower-index">1</sub>, <i>y</i><sub class="lower-index">1</sub></span>) and the coordinates of the point where the flag is situated (<span class="tex-span"><i>x</i><sub class="lower-index">2</sub>, <i>y</i><sub class="lower-index">2</sub></span>). Polycarp’s quadcopter can fly only parallel to the sides of the field each tick changing exactly one coordinate by <span class="tex-span">1</span>. It means that in one tick the quadcopter can fly from the point (<span class="tex-span"><i>x</i>, <i>y</i></span>) to any of four points: (<span class="tex-span"><i>x</i> - 1, <i>y</i></span>), (<span class="tex-span"><i>x</i> + 1, <i>y</i></span>), (<span class="tex-span"><i>x</i>, <i>y</i> - 1</span>) or (<span class="tex-span"><i>x</i>, <i>y</i> + 1</span>).</p>
+   <p>Thus the quadcopter path is a closed cycle starting and finishing in (<span class="tex-span"><i>x</i><sub class="lower-index">1</sub>, <i>y</i><sub class="lower-index">1</sub></span>) and containing the point (<span class="tex-span"><i>x</i><sub class="lower-index">2</sub>, <i>y</i><sub class="lower-index">2</sub></span>) strictly inside.</p>
+   <center> 
+    <img class="tex-graphics" src="/predownloaded/dc/9d/dc9d2065792cc1693100e785f74a3a29a2a6dc80.png" style="max-width: 100.0%;max-height: 100.0%;"> 
+    <span class="tex-font-size-small">The picture corresponds to the first example: the starting (and finishing) point is in (<span class="tex-span">1, 5</span>) and the flag is in (<span class="tex-span">5, 2</span>).</span> 
+   </center>
+   <p>What is the minimal length of the quadcopter path?</p>
+  </div>
+  <div class="input-specification">
+   <div class="section-title">
+    Input
+   </div>
+   <p>The first line contains two integer numbers <span class="tex-span"><i>x</i><sub class="lower-index">1</sub></span> and <span class="tex-span"><i>y</i><sub class="lower-index">1</sub></span> (<span class="tex-span"> - 100 ≤ <i>x</i><sub class="lower-index">1</sub>, <i>y</i><sub class="lower-index">1</sub> ≤ 100</span>) — coordinates of the quadcopter starting (and finishing) point.</p>
+   <p>The second line contains two integer numbers <span class="tex-span"><i>x</i><sub class="lower-index">2</sub></span> and <span class="tex-span"><i>y</i><sub class="lower-index">2</sub></span> (<span class="tex-span"> - 100 ≤ <i>x</i><sub class="lower-index">2</sub>, <i>y</i><sub class="lower-index">2</sub> ≤ 100</span>) — coordinates of the flag.</p>
+   <p>It is guaranteed that the quadcopter starting point and the flag do not coincide.</p>
+  </div>
+  <div class="output-specification">
+   <div class="section-title">
+    Output
+   </div>
+   <p>Print the length of minimal path of the quadcopter to surround the flag and return back.</p>
+  </div>
+  <div class="sample-tests">
+   <div class="section-title">
+    Examples
+   </div>
+   <div class="sample-test">
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>1 5<br>5 2<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>18<br></pre>
+    </div>
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>0 1<br>0 0<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>8<br></pre>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p> </p>
+</div>

@@ -1,0 +1,94 @@
+<div class="ttypography">
+ <div class="problem-statement">
+  <div class="header">
+   <div class="title">
+    A. Infinity Gauntlet
+   </div>
+   <div class="time-limit">
+    <div class="property-title">
+     time limit per test
+    </div>1 second
+   </div>
+   <div class="memory-limit">
+    <div class="property-title">
+     memory limit per test
+    </div>256 megabytes
+   </div>
+   <div class="input-file">
+    <div class="property-title">
+     input
+    </div>standard input
+   </div>
+   <div class="output-file">
+    <div class="property-title">
+     output
+    </div>standard output
+   </div>
+  </div>
+  <div>
+   <p>You took a peek on Thanos wearing Infinity Gauntlet. In the Gauntlet there is a place for six Infinity Gems:</p>
+   <ul> 
+    <li> the <span class="tex-font-style-tt">Power</span> Gem of <span class="tex-font-style-tt">purple</span> color, </li>
+    <li> the <span class="tex-font-style-tt">Time</span> Gem of <span class="tex-font-style-tt">green</span> color, </li>
+    <li> the <span class="tex-font-style-tt">Space</span> Gem of <span class="tex-font-style-tt">blue</span> color, </li>
+    <li> the <span class="tex-font-style-tt">Soul</span> Gem of <span class="tex-font-style-tt">orange</span> color, </li>
+    <li> the <span class="tex-font-style-tt">Reality</span> Gem of <span class="tex-font-style-tt">red</span> color, </li>
+    <li> the <span class="tex-font-style-tt">Mind</span> Gem of <span class="tex-font-style-tt">yellow</span> color. </li>
+   </ul>
+   <p>Using colors of Gems you saw in the Gauntlet determine the names of <span class="tex-font-style-bf">absent</span> Gems.</p>
+  </div>
+  <div class="input-specification">
+   <div class="section-title">
+    Input
+   </div>
+   <p>In the first line of input there is one integer $$$n$$$ ($$$0 \le n \le 6$$$) — the number of Gems in Infinity Gauntlet.</p>
+   <p>In next $$$n$$$ lines there are colors of Gems you saw. Words used for colors are: <span class="tex-font-style-tt">purple</span>, <span class="tex-font-style-tt">green</span>, <span class="tex-font-style-tt">blue</span>, <span class="tex-font-style-tt">orange</span>, <span class="tex-font-style-tt">red</span>, <span class="tex-font-style-tt">yellow</span>. It is guaranteed that all the colors are <span class="tex-font-style-bf">distinct</span>. All colors are given in lowercase English letters.</p>
+  </div>
+  <div class="output-specification">
+   <div class="section-title">
+    Output
+   </div>
+   <p>In the first line output one integer $$$m$$$ ($$$0 \le m \le 6$$$) — the number of absent Gems.</p>
+   <p>Then in $$$m$$$ lines print the names of absent Gems, each on its own line. Words used for names are: <span class="tex-font-style-tt">Power</span>, <span class="tex-font-style-tt">Time</span>, <span class="tex-font-style-tt">Space</span>, <span class="tex-font-style-tt">Soul</span>, <span class="tex-font-style-tt">Reality</span>, <span class="tex-font-style-tt">Mind</span>. Names can be printed in any order. Keep the first letter uppercase, others lowercase.</p>
+  </div>
+  <div class="sample-tests">
+   <div class="section-title">
+    Examples
+   </div>
+   <div class="sample-test">
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>4<br>red<br>purple<br>yellow<br>orange<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>2<br>Space<br>Time<br></pre>
+    </div>
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>0<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>6<br>Time<br>Mind<br>Soul<br>Power<br>Reality<br>Space<br></pre>
+    </div>
+   </div>
+  </div>
+  <div class="note">
+   <div class="section-title">
+    Note
+   </div>
+   <p>In the first sample Thanos already has <span class="tex-font-style-tt">Reality</span>, <span class="tex-font-style-tt">Power</span>, <span class="tex-font-style-tt">Mind</span> and <span class="tex-font-style-tt">Soul</span> Gems, so he needs two more: <span class="tex-font-style-tt">Time</span> and <span class="tex-font-style-tt">Space</span>.</p>
+   <p>In the second sample Thanos doesn't have any Gems, so he needs all six.</p>
+  </div>
+ </div>
+ <p> </p>
+</div>

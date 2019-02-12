@@ -1,0 +1,99 @@
+<div class="ttypography">
+ <div class="problem-statement">
+  <div class="header">
+   <div class="title">
+    C. Three displays
+   </div>
+   <div class="time-limit">
+    <div class="property-title">
+     time limit per test
+    </div>1 second
+   </div>
+   <div class="memory-limit">
+    <div class="property-title">
+     memory limit per test
+    </div>256 megabytes
+   </div>
+   <div class="input-file">
+    <div class="property-title">
+     input
+    </div>standard input
+   </div>
+   <div class="output-file">
+    <div class="property-title">
+     output
+    </div>standard output
+   </div>
+  </div>
+  <div>
+   <p>It is the middle of 2018 and Maria Stepanovna, who lives outside Krasnokamensk (a town in Zabaikalsky region), wants to rent three displays to highlight an important problem.</p>
+   <p>There are $$$n$$$ displays placed along a road, and the $$$i$$$-th of them can display a text with font size $$$s_i$$$ only. Maria Stepanovna wants to rent such three displays with indices $$$i &lt; j &lt; k$$$ that the font size increases if you move along the road in a particular direction. Namely, the condition $$$s_i &lt; s_j &lt; s_k$$$ should be held.</p>
+   <p>The rent cost is for the $$$i$$$-th display is $$$c_i$$$. Please determine the smallest cost Maria Stepanovna should pay.</p>
+  </div>
+  <div class="input-specification">
+   <div class="section-title">
+    Input
+   </div>
+   <p>The first line contains a single integer $$$n$$$ ($$$3 \le n \le 3\,000$$$) — the number of displays.</p>
+   <p>The second line contains $$$n$$$ integers $$$s_1, s_2, \ldots, s_n$$$ ($$$1 \le s_i \le 10^9$$$) — the font sizes on the displays in the order they stand along the road.</p>
+   <p>The third line contains $$$n$$$ integers $$$c_1, c_2, \ldots, c_n$$$ ($$$1 \le c_i \le 10^8$$$) — the rent costs for each display.</p>
+  </div>
+  <div class="output-specification">
+   <div class="section-title">
+    Output
+   </div>
+   <p>If there are no three displays that satisfy the criteria, print <span class="tex-font-style-tt">-1</span>. Otherwise print a single integer — the minimum total rent cost of three displays with indices $$$i &lt; j &lt; k$$$ such that $$$s_i &lt; s_j &lt; s_k$$$.</p>
+  </div>
+  <div class="sample-tests">
+   <div class="section-title">
+    Examples
+   </div>
+   <div class="sample-test">
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>5<br>2 4 5 4 10<br>40 30 20 10 40<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>90<br></pre>
+    </div>
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>3<br>100 101 100<br>2 4 5<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>-1<br></pre>
+    </div>
+    <div class="input">
+     <div class="title">
+      Input
+     </div>
+     <pre>10<br>1 2 3 4 5 6 7 8 9 10<br>10 13 11 14 15 12 13 13 18 13<br></pre>
+    </div>
+    <div class="output">
+     <div class="title">
+      Output
+     </div>
+     <pre>33<br></pre>
+    </div>
+   </div>
+  </div>
+  <div class="note">
+   <div class="section-title">
+    Note
+   </div>
+   <p>In the first example you can, for example, choose displays $$$1$$$, $$$4$$$ and $$$5$$$, because $$$s_1 &lt; s_4 &lt; s_5$$$ ($$$2 &lt; 4 &lt; 10$$$), and the rent cost is $$$40 + 10 + 40 = 90$$$.</p>
+   <p>In the second example you can't select a valid triple of indices, so the answer is <span class="tex-font-style-tt">-1</span>.</p>
+  </div>
+ </div>
+ <p> </p>
+</div>
